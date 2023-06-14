@@ -34,9 +34,8 @@
                     <h3 class="tittle-wthree pt-md-5 pt-3">Who we are?</h3>
                     <p class="sub-tittle mt-3 mb-sm-5 mb-4">
 
-                        Tiffin Box is a specially pizza restaurant. We have been serving more than 50 different flavors of Pizzas and many more to our customer since 2016. And we have been providing Dine-In, Delivery and takeaway service.
-                        <br> Kumaripati: 01-5537179 Boudha: 01-4914330 Pepsicola: 01-5901934 Bhaktapur Radhe Radhe: 01-6635247
-
+                        Tiffin Box is a specially virtual restaurant. We have been serving different various of foods and many more to our customer since 2023. And we have been providing Delivery service.
+                        <br> Pokhara-17,Birauta 9816637548
                     </p>
                 </div>
             </div>
@@ -51,7 +50,7 @@
     <footer class="text-center text-white">
         <!-- Copyright -->
         <div class="text-center p-2 p-2 mb-1 bg-dark text-white">
-            <p class="text-white">Copyright © 2022 Tiffin Box. All Rights Reserved. </p>
+            <p class="text-white">Copyright © 2023 Tiffin Box. All Rights Reserved. </p>
 
         </div>
         <!-- Copyright -->

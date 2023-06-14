@@ -373,7 +373,7 @@
                         <?php
                         if (isset($_SESSION['orh_id'])) { ?>
 
-                            echo
+
                             <a href="admin/order_success.php?id=<?php echo $order_detail[0]['p_id']; ?>" class="omise-checkout-button" style="color: #fff !important;">
                                 <i class="fas fa-cart-arrow-down"></i> Confirm Order</a>
                         <?php } else { ?>
@@ -410,7 +410,7 @@
 <footer class="text-center text-white">
     <!-- Copyright -->
     <div class="text-center p-2 p-2 mb-1 bg-dark text-white">
-        <p class="text-white">Copyright © 2022 Tiffin Box. All Rights Reserved. </p>
+        <p class="text-white">Copyright © 2023 Tiffin Box. All Rights Reserved. </p>
 
     </div>
     <!-- Copyright -->

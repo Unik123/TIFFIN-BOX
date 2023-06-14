@@ -9,112 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/main.css" rel="stylesheet">
-    <style>
-        html {
-            height: 100%;
-        }
-
-        .last-content {
-            background: rgb(235, 227, 227);
-            width: 100%;
-        }
-
-        .section-heading {
-            text-align: center;
-
-            margin-bottom: 80px;
-        }
-
-        .section-heading h2 {
-            font-size: 28px;
-            font-weight: 800;
-            color: #232d39;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-top: 0px;
-            margin-bottom: 0px;
-        }
-
-        .section-heading h2 em {
-            font-style: normal;
-            color: #ed563b;
-        }
-
-        .section-heading img {
-            margin: 20px auto;
-        }
-
-
-        #trainers {
-            padding-bottom: 50px;
-        }
-
-        #trainers .trainer-item {
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-            padding: 15px;
-            margin-bottom: 30px;
-        }
-
-        #trainers .trainer-item img {
-            width: 100%;
-            border-radius: 5px;
-        }
-
-        #trainers .trainer-item span {
-            font-size: 13px;
-            font-weight: 500;
-            color: #ed563b;
-            display: inline-block;
-            margin-top: 25px;
-            margin-bottom: 10px;
-        }
-
-        #trainers .trainer-item h4 {
-            font-size: 19px;
-            font-weight: 600;
-            color: #232d39;
-            letter-spacing: 0.5px;
-            margin-bottom: 18px;
-        }
-
-        #trainers .trainer-item p {
-            margin-bottom: 20px;
-        }
-
-        #trainers .btn {
-            color: #fff;
-        }
-
-        ul {
-            margin-bottom: 0px;
-        }
-
-
-        .section-bg {
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            position: relative;
-        }
-
-        .section-bg:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(35, 45, 57, 0.8);
-        }
-
-        .section-bg>form,
-        .section-bg .container {
-            position: relative;
-            z-index: 2
-        }
-    </style>
+    <link rel="stylesheet" href="css/index.css">
     <title> Tiffin Box</title>
 
     <link rel="stylesheet" href="css/main.css">
@@ -140,7 +35,7 @@
                     <div class="section-heading">
                         <h2>Our <em>Foods</em></h2>
                         <br>
-                        <p>Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra ipsum dolor, ultricies fermentum massa consequat eu.</p>
+                        <p>We provide best quality foods from different kitchens at best prices.</p>
                     </div>
                 </div>
             </div>
@@ -148,16 +43,15 @@
                 <div class="col-lg-4">
                     <div class="trainer-item">
                         <div class="image-thumb">
-                            <img src="img/12_2.jpg" alt="">
+                            <img src="img/2323.jpg" alt="">
                         </div>
                         <div class="down-content">
                             <span>
-                                Rs. 250
                             </span>
 
-                            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing.</h4>
+                            <h4>Combo</h4>
 
-                            <p>Nullam nibh mi, tincidunt sed sapien ut, rutrum hendrerit velit. Integer auctor a mauris sit amet eleifend.</p>
+
 
 
                         </div>
@@ -166,16 +60,13 @@
                 <div class="col-lg-4">
                     <div class="trainer-item">
                         <div class="image-thumb">
-                            <img src="img/12_2.jpg" alt="">
+                            <img src="img/10_1.jpg" alt="">
                         </div>
                         <div class="down-content">
                             <span>
-                                Rs. 250
                             </span>
 
-                            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing.</h4>
-
-                            <p>Nullam nibh mi, tincidunt sed sapien ut, rutrum hendrerit velit. Integer auctor a mauris sit amet eleifend.</p>
+                            <h4>Chicken Barbeque</h4>
 
 
                         </div>
@@ -184,28 +75,28 @@
                 <div class="col-lg-4">
                     <div class="trainer-item">
                         <div class="image-thumb">
-                            <img src="img/12_2.jpg" alt="">
+                            <img src="img/22_3.jpg" alt="">
                         </div>
                         <div class="down-content">
                             <span>
-                                Rs. 250
                             </span>
 
-                            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing.</h4>
-
-                            <p>Nullam nibh mi, tincidunt sed sapien ut, rutrum hendrerit velit. Integer auctor a mauris sit amet eleifend.</p>
+                            <h4>Chicken Biryani</h4>
 
 
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <br>
+        <br>
 
-            <center><a class="btn btn-primary me-1" href="shop_menu.php?s_id=2">View More</a></center>
+        <center><a class="btn btn-primary me-1" href="shop_menu.php?s_id=2">View More</a></center>
         </div>
     </section>
+
+
 
 
 
@@ -326,7 +217,7 @@
         <div class="position-relative d-flex text-center text-white promo-banner-bg py-3">
             <div class="p-lg-2 mx-auto my-5">
                 <h2>Send Us A Message</h2>
-                <p class="lead fw-normal"><i>"7 Days without pizza makes one week."</i></p>
+                <p class="lead fw-normal"><i>"7 Days without food makes one week."</i></p>
                 <center><a class="btn btn-primary me-1" href="contact.php">Contact Us</a></center>
             </div>
         </div>
@@ -335,7 +226,7 @@
     <footer class=" text-center text-white">
         <!-- Copyright -->
         <div class="text-center p-2 p-2 mb-1 bg-dark text-white absolute">
-            <p class="text-white">Copyright © 2022 Tiffin Box. All Rights Reserved. </p>
+            <p class="text-white">Copyright © 2023 Tiffin Box. All Rights Reserved. </p>
 
         </div>
         <!-- Copyright -->

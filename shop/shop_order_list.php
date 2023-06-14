@@ -140,9 +140,9 @@
                                                         while ($detail_row = $detail_result->fetch_array()) {
                                                         ?>
                                                             <li><strong class="h5"><?php echo $detail_row["ord_amount"] ?>x</strong> <?php echo $detail_row["f_name"];
-                                                                                                                                    if ($detail_row["ord_note"] != "") {
-                                                                                                                                        echo " ({$detail_row['ord_note']})";
-                                                                                                                                    } ?></li>
+                                                                                                                                        if ($detail_row["ord_note"] != "") {
+                                                                                                                                            echo " ({$detail_row['ord_note']})";
+                                                                                                                                        } ?></li>
                                                         <?php } ?>
                                                     </ul>
                                                 </div>
@@ -239,9 +239,9 @@
                                                         while ($detail_row = $detail_result->fetch_array()) {
                                                         ?>
                                                             <li><strong class="h5"><?php echo $detail_row["ord_amount"] ?>x</strong> <?php echo $detail_row["f_name"];
-                                                                                                                                    if ($detail_row["ord_note"] != "") {
-                                                                                                                                        echo " ({$detail_row['ord_note']})";
-                                                                                                                                    } ?></li>
+                                                                                                                                        if ($detail_row["ord_note"] != "") {
+                                                                                                                                            echo " ({$detail_row['ord_note']})";
+                                                                                                                                        } ?></li>
                                                         <?php } ?>
                                                     </ul>
                                                 </div>
@@ -338,9 +338,9 @@
                                                         while ($detail_row = $detail_result->fetch_array()) {
                                                         ?>
                                                             <li><strong class="h5"><?php echo $detail_row["ord_amount"] ?>x</strong> <?php echo $detail_row["f_name"];
-                                                                                                                                    if ($detail_row["ord_note"] != "") {
-                                                                                                                                        echo " ({$detail_row['ord_note']})";
-                                                                                                                                    } ?></li>
+                                                                                                                                        if ($detail_row["ord_note"] != "") {
+                                                                                                                                            echo " ({$detail_row['ord_note']})";
+                                                                                                                                        } ?></li>
                                                         <?php } ?>
                                                     </ul>
                                                 </div>
@@ -437,9 +437,9 @@
                                                         while ($detail_row = $detail_result->fetch_array()) {
                                                         ?>
                                                             <li><strong class="h5"><?php echo $detail_row["ord_amount"] ?>x</strong> <?php echo $detail_row["f_name"];
-                                                                                                                                    if ($detail_row["ord_note"] != "") {
-                                                                                                                                        echo " ({$detail_row['ord_note']})";
-                                                                                                                                    } ?></li>
+                                                                                                                                        if ($detail_row["ord_note"] != "") {
+                                                                                                                                            echo " ({$detail_row['ord_note']})";
+                                                                                                                                        } ?></li>
                                                         <?php } ?>
                                                     </ul>
                                                 </div>
@@ -475,7 +475,7 @@
     <footer class="text-center text-white">
         <!-- Copyright -->
         <div class="text-center p-2 p-2 mb-1 bg-dark text-white">
-            <p class="text-white">Copyright © 2022 Tiffin Box. All Rights Reserved. </p>
+            <p class="text-white">Copyright © 2023 Tiffin Box. All Rights Reserved. </p>
 
         </div>
         <!-- Copyright -->

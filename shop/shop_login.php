@@ -49,7 +49,7 @@
     <footer class="text-center text-white">
         <!-- Copyright -->
         <div class="text-center p-2 p-2 mb-1 bg-dark text-white">
-            <p class="text-white">Copyright © 2022 Tiffin Box. All Rights Reserved. </p>
+            <p class="text-white">Copyright © 2023 Tiffin Box. All Rights Reserved. </p>
 
         </div>
         <!-- Copyright -->

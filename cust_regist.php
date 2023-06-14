@@ -17,7 +17,7 @@
     <header class="navbar navbar-light fixed-top bg-light shadow-sm mb-auto">
         <div class="container-fluid mx-4">
             <a href="index.php">
-                <img src="img/LOGO_BLACK.png" width="75" class="me-2" alt="Tiffin Box Logo">
+                <img src="https://cdn.dribbble.com/users/1172898/screenshots/5874290/tiffin_box.jpg" width="75" class="me-2" alt="Tiffin Box Logo">
             </a>
         </div>
     </header>
@@ -90,7 +90,7 @@
     <footer class="text-center text-white">
         <!-- Copyright -->
         <div class="text-center p-2 p-2 mb-1 bg-dark text-white">
-            <p class="text-white">Copyright © 2022 Tiffin Box. All Rights Reserved. </p>
+            <p class="text-white">Copyright © 2023 Tiffin Box. All Rights Reserved. </p>
 
         </div>
         <!-- Copyright -->

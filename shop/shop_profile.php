@@ -143,13 +143,13 @@
                     $current_time = date('H:i:s');
                     if ($current_time >= $row["s_openhour"] && $current_time <= $row["s_closehour"]) {
                     ?><span class="badge fs-6 bg-success">Store-front Opening</span> <?php
-                                                                                        } else {
-                                                                                            ?><span class="badge fs-6 bg-danger">Store-front Closed</span> <?php
-                                                                                        }
-                                                                                        $open = explode(":", $row["s_openhour"]);
-                                                                                        $close = explode(":", $row["s_closehour"]);
-                                                                                        echo $open[0] . ":" . $open[1] . " - " . $close[0] . ":" . $close[1];
-                                                                                        ?>
+                                                                                    } else {
+                                                                                        ?><span class="badge fs-6 bg-danger">Store-front Closed</span> <?php
+                                                                                                                                                        }
+                                                                                                                                                        $open = explode(":", $row["s_openhour"]);
+                                                                                                                                                        $close = explode(":", $row["s_closehour"]);
+                                                                                                                                                        echo $open[0] . ":" . $open[1] . " - " . $close[0] . ":" . $close[1];
+                                                                                                                                                            ?>
                 </dd>
                 <dt class="col-sm-3">Shop Operation Status</dt>
                 <dd class="col-sm-9">
@@ -178,7 +178,7 @@
     <footer class="text-center text-white">
         <!-- Copyright -->
         <div class="text-center p-2 p-2 mb-1 bg-dark text-white">
-            <p class="text-white">Copyright © 2022 Tiffin Box. All Rights Reserved. </p>
+            <p class="text-white">Copyright © 2023 Tiffin Box. All Rights Reserved. </p>
 
         </div>
         <!-- Copyright -->

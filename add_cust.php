@@ -1,8 +1,8 @@
 <?php
 //For inserting new customers to database
 include('conn_db.php');
-$pwd = $_POST["pwd"];
-$cfpwd = $_POST["cfpwd"];
+$pwd = md5($_POST["pwd"]);
+$cfpwd = md5($_POST["cfpwd"]);
 if ($pwd != $cfpwd) {
 ?>
     <script>

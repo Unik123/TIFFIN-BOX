@@ -38,7 +38,7 @@
 
                                     <div class="col-9">
                                         <h6>Tiffin Box</h6>
-                                        <p> 7 days without pizza makes one week.
+                                        <p> 7 days without food makes one week.
                                         </p>
                                     </div>
                                 </div>
@@ -50,7 +50,7 @@
 
                                     <div class="col-9">
                                         <h6>Email</h6>
-                                        <a href="mailto:luckymaharjan5@gmail.com">pizzaworldnp@gmail.com</a>
+                                        <a href="mailto:luckymaharjan5@gmail.com">tiffinboxnp@gmail.com</a>
                                     </div>
                                 </div>
                         </li>
@@ -60,7 +60,7 @@
 
                                     <div class="col-9">
                                         <h6>Phone</h6>
-                                        <p>01 - 5000000</p>
+                                        <p>9816637548</p>
                                     </div>
                                 </div>
                         </li>
@@ -102,7 +102,7 @@
     <footer class="text-center text-white">
         <!-- Copyright -->
         <div class="text-center p-2 p-2 mb-1 bg-dark text-white">
-            <p class="text-white">Copyright © 2022 Tiffin Box. All Rights Reserved. </p>
+            <p class="text-white">Copyright © 2023 Tiffin Box. All Rights Reserved. </p>
 
         </div>
         <!-- Copyright -->
