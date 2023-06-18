@@ -2,7 +2,7 @@
 include('../conn_db.php');
 
 $username = $_POST["username"];
-$pwd = $_POST["pwd"];
+$pwd = md5($_POST["pwd"]);
 
 $query = "SELECT c_id,c_username,c_firstname,c_lastname FROM customer WHERE
     c_username = '$username' AND c_pwd = '$pwd' AND c_type = 'ADM' LIMIT 0,1";

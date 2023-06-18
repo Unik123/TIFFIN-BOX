@@ -15,5 +15,3 @@
     }else{
         header("location: admin_shop_list.php?del_shp=0");
     }
-
-?>

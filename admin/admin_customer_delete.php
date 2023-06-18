@@ -15,5 +15,3 @@
     }else{
         header("location: admin_customer_list.php?del_cst=0");
     }
-
-?>
