@@ -23,7 +23,7 @@
     <script type="text/javascript" src="js/input_number.js"></script>
     <script type="text/javascript">
         function changeshopcf() {
-            return window.confirm("Do you want to change the shop?\nDon't worry we will do it for you automatically.");
+            return window.confirm("Do you want to change the shop?\nDon't worry we will do it for you automatically.If you order from the differen kitchen then your previous order will be deleted.\nIf yes then click ok otherwise cancel your order and order from same kitchen.");
         }
     </script>
     <title>Food Item | Tiffin Box</title>
