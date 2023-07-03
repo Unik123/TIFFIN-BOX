@@ -70,6 +70,7 @@
                             <?php
                             $option_query = "SELECT DISTINCT c.c_id, c.c_firstname,c.c_lastname
                                 FROM order_header orh INNER JOIN customer c ON orh.c_id = c.c_id;";
+
                             $option_result = $mysqli->query($option_query);
                             $opt_row = $option_result->num_rows;
                             if ($option_result->num_rows != 0) {
