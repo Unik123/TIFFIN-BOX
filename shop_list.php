@@ -24,8 +24,8 @@
         <a class="nav nav-item text-decoration-none text-muted mb-3" href="#" onclick="history.back();">
             <i class="bi bi-arrow-left-square me-2"></i>Go back
         </a>
-        <h3 class="border-bottom pb-2"><i class="bi bi-shop align-top"></i> Available Shop</h3>
 
+        <h3 class="border-bottom pb-2"><i class="bi bi-shop align-top"></i> Available Shop</h3>
         <!-- GRID SHOPS SELECTION -->
         <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-3">
 
