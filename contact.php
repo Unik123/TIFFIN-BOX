@@ -87,7 +87,8 @@
                             <textarea class="form-control message" name="contact-message" name="Message" placeholder="" required=""></textarea>
                         </div>
                         <br>
-                        <a class="btn btn-primary me-1" href="index.php">Submit</a>
+
+                        <button type=submit><a class="btn btn-primary me-1">Submit</a></button>
                     </form>
 
                 </div>

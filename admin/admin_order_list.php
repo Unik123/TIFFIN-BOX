@@ -69,7 +69,7 @@
                             <option selected value="">Customer Name</option>
                             <?php
                             $option_query = "SELECT DISTINCT c.c_id, c.c_firstname,c.c_lastname
-                                FROM order_header orh INNER JOIN customer c ON orh.c_id = c.c_id;";
+                                FROM  customer c ;";
 
                             $option_result = $mysqli->query($option_query);
                             $opt_row = $option_result->num_rows;
@@ -125,7 +125,7 @@
                             <option selected value="">Shop Name</option>
                             <?php
                             $option_query = "SELECT DISTINCT s.s_id, s.s_name
-                                FROM order_header orh INNER JOIN shop s ON orh.s_id = s.s_id;";
+                                FROM  shop s; ";
                             $option_result = $mysqli->query($option_query);
                             $opt_row = $option_result->num_rows;
                             if ($option_result->num_rows != 0) {
