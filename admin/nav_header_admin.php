@@ -25,6 +25,9 @@
                 <li class="nav-item">
                     <a href="admin_order_list.php" class="nav-link px-2 text-dark">Order</a>
                 </li>
+                <li class="nav-item">
+                    <a href="feedback.php" class="nav-link px-2 text-dark">Feedback</a>
+                </li>
             </ul>
             <div class="d-flex">
                 <?php if (!isset($_SESSION['aid'])) { ?>
