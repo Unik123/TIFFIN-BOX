@@ -50,7 +50,7 @@
 
                                     <div class="col-9">
                                         <h6>Email</h6>
-                                        <a href="mailto:luckymaharjan5@gmail.com">tiffinboxnp@gmail.com</a>
+                                        <a href="mailto:tiffinboxnp@gmail.com">tiffinboxnp@gmail.com</a>
                                     </div>
                                 </div>
                         </li>
