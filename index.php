@@ -303,7 +303,7 @@
             <div class="position-relative d-flex text-center text-white promo-banner-bg py-3">
                 <div class="p-lg-2 mx-auto my-5">
                     <h2>Send Us A Message</h2>
-                    <p class="lead fw-normal"><i>"Good food is the foundation of genuine happiness."</i></p>
+                    <p class="lead fw-normal"><i>"Good food is the foundation of genuine happiness and laughter."</i></p>
                     <center><a class="btn btn-primary me-1" href="contact.php">Contact Us</a></center>
                 </div>
             </div>
