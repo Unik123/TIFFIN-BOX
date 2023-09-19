@@ -55,6 +55,14 @@
                 <input type="email" class="form-control" id="email" placeholder="E-mail" name="email" required>
                 <label for="email">E-mail</label>
             </div>
+            <div class="form-floating mb-2">
+                <input type="tel" class="form-control" id="phone" placeholder="Phone Number" name="phone" required>
+                <label for="phone">Phone Number</label>
+            </div>
+            <div class="form-floating mb-2">
+                <input type="text" class="form-control" id="text" placeholder="Address" name="addresss" required>
+                <label for="addresss">Address</label>
+            </div>
             <div class="form-floating">
                 <select class="form-select mb-2" id="gender" name="gender">
                     <option selected value="-">---</option>

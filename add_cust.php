@@ -18,6 +18,8 @@ if ($pwd != $cfpwd) {
     $gender = $_POST["gender"];
     $email = $_POST["email"];
     $type = $_POST["type"];
+    $phone = $_POST["phone"];
+    $address = $_POST["addresss"];
 
     if ($gender == "-" || $type == "-") {
     ?>
@@ -56,8 +58,8 @@ if ($pwd != $cfpwd) {
     $result->free_result();
 
 
-    $query = "INSERT INTO customer (c_username,c_pwd,c_firstname,c_lastname,c_email,c_gender,c_type)
-        VALUES ('$username','$pwd','$firstname','$lastname','$email','$gender','$type');";
+    $query = "INSERT INTO customer (c_username,c_pwd,c_firstname,c_lastname,c_email,c_phone,addresss,c_gender,c_type)
+        VALUES ('$username','$pwd','$firstname','$lastname','$email',$phone,'$address','$gender','$type');";
 
     $result = $mysqli->query($query);
 

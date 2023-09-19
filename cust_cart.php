@@ -270,6 +270,7 @@
                                         $gt_arr = $mysqli->query($gt_query)->fetch_array();
                                         $order_cost = $gt_arr["grandtotal"];
                                         printf("Rs.  %.2f ", $order_cost);
+                                        $total_amount = $order_cost;
                                         if ($order_cost < 20) {
                                             $min_cost = false;
                                             $no_order = true;
@@ -291,11 +292,14 @@
                                 <h5 class="card-title fw-light">My Information</h5>
                                 <ul class="card-text list-unstyled m-0 p-0 small">
                                     <?php
-                                    $cust_query = "SELECT c_email FROM customer WHERE c_id = {$_SESSION['cid']} LIMIT 0,1";
+                                    $cust_query = "SELECT c_email, c_phone,addresss FROM customer WHERE c_id = {$_SESSION['cid']} LIMIT 0,1";
                                     $cust_arr = $mysqli->query($cust_query)->fetch_array();
                                     ?>
                                     <li>Name: <?php echo $_SESSION["firstname"] . " " . $_SESSION["lastname"]; ?></li>
                                     <li>Email: <?php echo $cust_arr["c_email"] ?> </li>
+                                    <li>Phone: <?php echo $cust_arr["c_phone"] ?> </li>
+                                    <li>Address: <?php echo $cust_arr["addresss"] ?> </li>
+
                                 </ul>
                             </div>
                         </div>
@@ -379,6 +383,9 @@
                         <?php } else { ?>
                             <a href="admin/order_success.php?id=<?php echo $orh["orh_id"]; ?>" class="omise-checkout-button" style="color: #fff !important;">
                                 <i class="fas fa-cart-arrow-down"></i> Cash On Delivery</a><br>
+                            <!-- Khalti button -->
+                            <button id="payment-button">Pay with Khalti</button>
+
                         <?php } ?>
                         <br>
                         <script type="text/javascript" src="https://cdn.omise.co/omise.js" data-key="pkey_test_5qtd0o2x3znnduisr3e" data-frame-label="Tiffin Box" data-button-label="Online Payment" data-submit-label="Submit" data-locale="en" data-location="Nepal" data-amount="<?php echo $order_cost * 100; ?>" data-currency="NRP">
@@ -422,5 +429,48 @@
     var pay_btn = document.getElementsByClassName("omise-checkout-button");
     pay_btn[0].classList.add("w-100", "btn", "btn-primary");
 </script>
+<!-- khalti implementation scripts -->
+<script src="https://khalti.s3.ap-south-1.amazonaws.com/KPG/dist/2020.12.17.0.0.0/khalti-checkout.iffe.js"></script>
+<?php
+echo '<script>
+    var config = {
+        // replace the publicKey with yours
+        "publicKey": "test_public_key_57db27779b9d436cb0f21b745433e3da",
+        "productIdentity": "1234567890",
+        "productName": "Dragon",
+        "productUrl": "http://gameofthrones.wikia.com/wiki/Dragons",
+        "paymentPreference": [
+            "KHALTI",
+            "EBANKING",
+            "MOBILE_BANKING",
+            "CONNECT_IPS",
+            "SCT",
+        ],
+        "eventHandler": {
+            onSuccess(payload) {
+                // hit merchant api for initiating verfication
+                console.log(payload);
+                //create mysql record
+            },
+            onError(error) {
+                console.log(error);
+            },
+            onClose() {
+                console.log("widget is closing");
+            }
+        }
+    };
+
+    var checkout = new KhaltiCheckout(config);
+    var btn = document.getElementById("payment-button");
+    btn.onclick = function() {
+        // minimum transaction amount must be 10, i.e 1000 in paisa.
+        checkout.show({
+            amount: 1000
+        });
+    }
+</script>'
+
+?>
 
 </html>

@@ -14,10 +14,11 @@
         $firstname = $_POST["firstname"];
         $lastname = $_POST["lastname"];
         $email = $_POST["email"];
+        $phone = $_POST["phone"];
         $gender = $_POST["gender"];
         $type = $_POST["type"];
 
-        $query = "UPDATE customer SET c_firstname = '{$firstname}', c_lastname = '{$lastname}', c_email = '{$email}', c_gender = '{$gender}', c_type = '{$type}' WHERE c_id = {$_SESSION['cid']}";
+        $query = "UPDATE customer SET c_firstname = '{$firstname}', c_lastname = '{$lastname}', c_email = '{$email}',c_phone = '{$phone}',c_address = '{$address}', c_gender = '{$gender}', c_type = '{$type}' WHERE c_id = {$_SESSION['cid']}";
         $result = $mysqli->query($query);
         if ($result) {
             $_SESSION["firstname"] = $firstname;
@@ -47,7 +48,7 @@
         </a>
         <?php
         //Select customer record from database
-        $query = "SELECT c_firstname,c_lastname,c_email,c_gender,c_type FROM customer WHERE c_id = {$_SESSION['cid']} LIMIT 0,1";
+        $query = "SELECT c_firstname,c_lastname,c_email,c_phone,c_gender,c_type FROM customer WHERE c_id = {$_SESSION['cid']} LIMIT 0,1";
         $result = $mysqli->query($query);
         $row = $result->fetch_array();
         ?>
@@ -64,6 +65,10 @@
             <div class="form-floating mb-2">
                 <input type="email" class="form-control" id="email" placeholder="E-mail" name="email" value="<?php echo $row["c_email"]; ?>" required>
                 <label for="email">E-mail</label>
+            </div>
+            <div class="form-floating mb-2">
+                <input type="tel" class="form-control" id="phone" placeholder="Phone Number" name="phone" value="<?php echo $row["c_phone"]; ?>" required>
+                <label for="phone">Phone Number</label>
             </div>
             <div class="form-floating">
                 <select class="form-select mb-2" id="gender" name="gender">

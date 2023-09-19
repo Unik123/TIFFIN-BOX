@@ -113,7 +113,7 @@
         <!-- START CUSTOMER INFORMATION -->
         <?php
         //Select customer record from database
-        $query = "SELECT c_username,c_firstname,c_lastname,c_email,c_gender,c_type FROM customer WHERE c_id = {$_SESSION['cid']} LIMIT 0,1";
+        $query = "SELECT c_username,c_firstname,c_lastname,c_email,c_phone,c_gender,c_type FROM customer WHERE c_id = {$_SESSION['cid']} LIMIT 0,1";
         $result = $mysqli->query($query);
         $row = $result->fetch_array();
         ?>
@@ -156,6 +156,10 @@
 
                 <dt class="col-sm-3">Email</dt>
                 <dd class="col-sm-9"><?php echo $row["c_email"]; ?></dd>
+                <dt class="col-sm-3">Phone Number</dt>
+                <dd class="col-sm-9"><?php echo $row["c_phone"]; ?></dd>
+                <dt class="col-sm-3">Address</dt>
+                <dd class="col-sm-9"><?php echo $row["c_address"]; ?></dd>
             </dl>
         </div>
         <!-- END CUSTOMERS INFORMATION -->

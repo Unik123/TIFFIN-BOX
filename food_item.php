@@ -37,7 +37,11 @@
     $query = "SELECT f.*,s.s_status,s.s_preorderstatus FROM food f INNER JOIN shop s ON f.s_id = s.s_id WHERE f.s_id = {$s_id} AND f.f_id = {$f_id} LIMIT 0,1";
     $result = $mysqli->query($query);
     $food_row = $result->fetch_array();
-    echo $food_row;
+    try {
+
+        // echo var_dump($food_row);
+    } catch (Exception $e) {
+    }
     ?>
     <div class="container px-5 py-4" id="shop-body">
         <div class="row my-4">
